@@ -45,7 +45,6 @@ hr {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #333 -moz-use-text-color -moz-use-text-color !important;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
@@ -64,7 +63,7 @@ div#msg {
 	color: #aaa;
 	font-size: 12px;
 	font-weight: bold;
-	text-shadow: 0 0 3px #000;
+	text-shadow: 0 0 2px #000;
 }
 div#sc {
     border: 1px solid #333333;
@@ -92,7 +91,7 @@ ul.CMenu li {
     background: #3a3a3a
 }
 ul.CMenu li:hover {
-    background: #333
+    background: #ccc
 }
 ul.CMenu li.menuitem:first-child {
     -moz-border-radius-topleft: 5px;
@@ -112,14 +111,14 @@ ul.CMenu li a {
 	padding: 3px 4px 3px 21px;
 }
 ul.CMenu li a:hover {
-    color: #757571;
+    color: #ccc;
     background: #cfdeef url(./images/menus.png) no-repeat 0px 0px;
 }
 ul.CMenu li a.dis {
-    color: #333333
+    color: #555
 }
 ul.CMenu li a.dis:hover {
-    color: #333333
+    color: #888
 }
 ul.CMenu li hr {
 	background-color: #222;
@@ -131,7 +130,7 @@ ul.CMenu li hr {
 	width: 100%;
 }
 ul.CMenu li a.exp {
-    background: transparent url(./images/menus.png) no-repeat right -22px;
+    background: transparent url(./images/menus.png) no-repeat right -8px;
 }
 ul.CMenu li a.exp:hover {
     background: transparent url(./images/menus.png) no-repeat right -44px;
@@ -147,24 +146,22 @@ ul.CMenu li a:hover {
 	background-color: #222;
 	color: #ccc;
 	font-family: Open Sans;
-	font-weight: 600;
-	text-shadow: 0 0 2px #000;
+	text-shadow: 0 0 2px #eee;
 }
 ul.CMenu li:hover ul li a {
-    background-color: #111;
-    color: #666666
+    background-color: #222;
+    color: #888
 }
 ul.CMenu li:hover ul li a:hover {
-	background-color: #222;
+	background-color: #888;
 	color: #ccc;
-	text-shadow: 0 0 2px #000;
+	text-shadow: 0 0 2px #eee;
 }
 ul.CMenu li ul li a.dis {
-    color: #333333
+    color: #555
 }
 ul.CMenu li ul li a.dis:hover {
-    background-color: #eee;
-    color: #333333
+    color: #888
 }
 div#VDivider {
     background: #444 none repeat scroll 0 0;
@@ -310,6 +307,9 @@ input[type="text"][disabled], input[type="password"][disabled], input[type="file
     border: 1px solid #313131;
     color: black;
 }
+input.browseButton {
+    width: 30px !important;
+}
 input.Button {
     background: #222 none repeat scroll 0 0;
     border: 1px solid #333;
@@ -318,6 +318,7 @@ input.Button {
     cursor: pointer;
     display: inline;
     font-weight: 400;
+    width: 100px;
     height: 21px;
     line-height: 2px;
     margin-left: 1px;
@@ -326,7 +327,7 @@ input.Button {
 }
 input.Button:hover, input.Button:focus {
     background: #3a3a3a none repeat scroll 0 0;
-    text-shadow: 0 0 4px #999;
+    text-shadow: 0 0 2px #999;
     color: #999;
 }
 div#CatList {
@@ -597,16 +598,14 @@ ul#tabbar li a {
 ul#tabbar li a:hover {
 	border-color: #222;
 	border-width: 1px;
-	color: #fff;
-	text-shadow: 0 0 2px #ccc;
+	text-shadow: 0 0 2px #aaa;
 	background: #333;
 }
 ul#tabbar li.selected a {
 	background: #181818 none repeat scroll 0 0;
 	border: 1px solid #222;
 	color: #eee;
-	padding: 4px 6px 5px;
-	text-shadow: 0 0 4px #eee;
+	text-shadow: 0 0 2px #eee;
 	top: 0;
 }
 .tabbar li {
@@ -655,11 +654,8 @@ ul#tabbar li.selected a {
     border-radius: 4px;
     border-style: solid solid none;
     border-width: 1px 1px medium;
-    color: #ececec;
-    font-weight: bold;
-    margin: 0 2px 0 0;
-    padding: 4px 6px 3px;
-    text-shadow: 0 0 2px #ececec;
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
     top: 0;
 }
 /* DIALOGS */
